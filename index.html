@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+</head>
+<body>
+    <main id="main">
+        <h1 id="title">Survey Form</h1>
+
+        <form id="survey-form" action="/action_page.php" method="get">
+            <h3 id="description"> Let us know how we can improve our product </h3></br>
+
+            <div class="grid">
+                <label id="name-label">Name:</label>
+                <input id="name" type="text" placeholder="Enter your name..." required>
+
+                <label id="email-label">Email:</label>
+                <input id="email" type="email" placeholder="Enter your email..." required>
+
+                <label id="number-label">Age:</label>
+                <input id="number" type="number" min="1" max="99" placeholder="Enter your age..." required>
+
+                <label class="dropdown-label" for="dropdown1">Which option best describes your current role?</label>
+                <select id="dropdown1">
+                    <option value="" disabled selected>
+                        Select your option
+                    </option>
+                    <option value="Student">
+                        Student
+                    </option>
+                    <option value="Full Time Job">
+                        Full Time Job
+                    </option>
+                    <option value="Full Time Learner">
+                        Full Time Learner
+                    </option>
+                    <option value="Prefer not to say">
+                        Prefer not to say
+                    </option>
+                    <option value="Other">
+                        Other
+                    </option>
+                </select>
+
+                <label id="radio-label" for="radioBtn">
+                    How likely is that you would recommend this website to a friend?
+                </label>
+                <div id="radioBtnInput">
+                    <input class="radioBtn" type="radio" name="radioBtnInput" value="Definitely" checked>Definitely</br>
+                    <input class="radioBtn" type="radio" name="radioBtnInput" value="Maybe">Maybe</br>
+                    <input class="radioBtn" type="radio" name="radioBtnInput" value="Unlikely">Unlikely / No
+                </div>
+
+                
+                <label class="dropdown-label" for="dropdown2" id="ddquestion">What do you like most about this website?</label>
+                    <select id="dropdown2">
+                        <option value="" disabled selected>
+                        Select your option
+                        </option>
+                        <option value="Challenges">
+                        Challenges
+                        </option>
+                        <option value="Projects">
+                        Projects
+                        </option>
+                        <option value="Community">
+                        Community
+                        </option>
+                        <option value="Other">
+                        Other
+                        </option>
+                    </select>
+                <label class="comment-suggestion" id="other1" for="other1">
+                        If you choose other, please add your comment:
+                </label>
+                <textarea id="textarea1" rows="2" cols="50"></textarea>
+
+                <label id="checkbox" for="checkbox">
+                    Things that should be improved in the future:</br>(Check all that apply)
+                </label>
+                <div id="checkboxInput">
+                    <input type="checkbox" value="Website layout">Website layout</br>
+                    <input type="checkbox" value="Mobile layout">Mobile layout</br>
+                    <input type="checkbox" value="Color theme">Color theme</br>
+                    <input type="checkbox" value="Other">Other
+                </div>
+                <label class="comment-suggestion" id="other2" for="other2">
+                    If you choose other, please add your comment below:
+                </label>
+                <textarea id="textarea2" rows="2" cols="50"></textarea>
+
+                <label class="comment-suggestion" id="suggestion" for="suggestion">
+                    Any comments or suggestions?
+                </label>
+                <textarea id="commentform" rows="5" cols="50" placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <label for="submit">
+            <input id="submit" type="submit" value="Submit">
+            </label>
+            
+            </br></br>
+        </form>
+    </main>
+</body>
+</html>
